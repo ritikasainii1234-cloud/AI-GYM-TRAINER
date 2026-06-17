@@ -6,7 +6,7 @@ def render_login_wall():
         return True
     
     st.title("🏋️‍♂️ AI Real-time GYM Trainer")
-    st.markdown("###Welcome! Please enter a username to start.")
+    st.markdown("Welcome! Please enter a username to start.")
 
     with st.form("login_form", clear_on_submit=False):
         username = st.text_input("Name (unique)", placeholder="unique name e.g Himanshu")
@@ -17,7 +17,5 @@ def render_login_wall():
             st.error("Name cannot be empty.")
             return False
         
-
-        user = get_or_create_user(username)
 
         

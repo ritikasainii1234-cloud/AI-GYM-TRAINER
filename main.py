@@ -8,8 +8,13 @@ def main():
     page_title="AI Real-time GYM Coach",
     initial_sidebar_state="expanded",
     layout="centered"
+      )
+    if not render_login_wall():
+        return
+    
 
-    )
-
+if __name__ == "__main__" :
+    main()
+    
 st.title("AI Real-time GYM Coach")
 st.write("Setup done!")

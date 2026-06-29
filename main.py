@@ -18,7 +18,7 @@ if __name__ == "__main__" :
     main()
     
 st.title("AI Real-time GYM Coach")
-
+st.write("Setup done!")
 
 
 
